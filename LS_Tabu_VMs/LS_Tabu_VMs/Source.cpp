@@ -106,7 +106,7 @@ int main()
 	vector<pair<long long, double>> res_cost_MVO;
 	vector<pair<long long, double>> res_cost_EMVO;
 
-	for (int i = 0; i < 1; i++)								// for each instance, run 10 times
+	for (int i = 0; i < 10; i++)								// for each instance, run 10 times
 	{
 		TLSPopInfo pTLS;										// LS-JSP algorithm
 		pTLS = TabuLS(jData, VMsdata, TLSPops);
