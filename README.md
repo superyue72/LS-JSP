@@ -14,7 +14,9 @@ The source code of LS-JSP and baseline algorithms are provided in [Source code](
 ## 2. Benchmark
 To evaluate the performance of the proposed algorithm, we extract the real-world trace data as one benchmark (Google benchmark) and generate another based on it (synthetic benchmark).
 
-We extract the information of jobs scheduled on the cloud from the first-day trace. The failed jobs and killed jobs are not considered in current research. The preprocessed data is provided in Dataset. Raw and preprocessed data are available at: <https://github.com/google/cluster-data>
+We extract the information of jobs scheduled on the cloud from the first-day trace. The failed jobs and killed jobs are not considered in current research. The preprocessed data is provided in [Dataset](/Dataset). 
+
+Raw and preprocessed data are available at: <https://github.com/google/cluster-data>
 
 ## 3. Results
 We have 210 test instances, including 90 synthetic instances and 120 Google-based instances. Each algorithm is executed 10 times (replicates) for each instance. The average results are computed.
