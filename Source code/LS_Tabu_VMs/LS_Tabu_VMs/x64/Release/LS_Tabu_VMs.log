@@ -1,0 +1,66 @@
+﻿  base.cpp
+  Evaluation.cpp
+  GA.cpp
+  MVO.cpp
+  PSO.cpp
+  ReadData.cpp
+  Source.cpp
+  tabu.cpp
+  TabuLS.cpp
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file Source.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file Source.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file GA.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file GA.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file TabuLS.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file TabuLS.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file MVO.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file MVO.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file Evaluation.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file Evaluation.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(40,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(54,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(56,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\PSO.h(5,10): fatal  error C1083: Cannot open include file: 'LocalSearch.h': No such file or directory (compiling source file Source.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\GA.cpp(125,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\GA.cpp(139,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\GA.cpp(141,27): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\GA.cpp(157,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(453,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(455,28): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file ReadData.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file ReadData.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\MVO.cpp(183,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file base.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file base.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file PSO.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file PSO.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\MVO.cpp(252,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\Evaluation.cpp(170,6): warning C4101: 'jmID': unreferenced local variable
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\ReadData.cpp(44,17): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\ReadData.cpp(45,19): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\ReadData.cpp(46,23): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(28,19): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file tabu.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.h(29,20): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file tabu.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\ReadData.cpp(78,23): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(1323,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\TabuLS.cpp(1325,28): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\ReadData.cpp(112,31): warning C4101: 'e': unreferenced local variable
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\PSO.h(5,10): fatal  error C1083: Cannot open include file: 'LocalSearch.h': No such file or directory (compiling source file PSO.cpp)
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\Evaluation.cpp(1370,6): warning C4101: 'jmID': unreferenced local variable
+D:\MyPaper\Cost Optimization for Priority aware Scheduling of Jobs on Cloud\GitHub\Source code\LS_Tabu_VMs\LS_Tabu_VMs\base.cpp(243,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
