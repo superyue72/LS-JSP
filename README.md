@@ -21,14 +21,15 @@ We have 210 test instances, including 90 synthetic instances and 120 Google-base
 
 ### 3.1 Comparison Experiments 
 
-- `Results on Google Benchmark`:
+- `Results on Google Benchmark.xlsx`:
   
-  Give the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on Google Benchmark (120 instances)
-- `Results on synthetic Benchmark`:
+  Gives the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on Google Benchmark (120 instances)
+- `Results on synthetic Benchmark.xlsx`:
   
-  Give the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on synthetic Benchmark (90 instances) 
+  Gives the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on synthetic Benchmark (90 instances) 
 
 ### 3.2 Ablation Analysis
+To evaluate the effectiveness of the core algorithmic techniques underlying LS-JSP, Four variations algorithms named LS-JSP1, LS-JSP2, LS-JSP3 and LS-JSP4 are modified, which are the proposed LS-JSP without scoring function strategy, further optimisation search, BLS strategy, and tabu strategy, respectively. We compare the performance of the LS-JSP and its variants. We choose the instances with two job size, namely n = 500 and n = 3000, from the synthetic and Google benchmarks.
 
 | Name | Description |
 |----------- |----------- |
@@ -37,10 +38,16 @@ We have 210 test instances, including 90 synthetic instances and 120 Google-base
 |LS-JSP3 |without BLS|
 |LS-JSP4 |without tabu list|
 
-To evaluate the effectiveness of the core algorithmic techniques underlying LS-JSP, Four variations algorithms named LS-JSP1, LS-JSP2, LS-JSP3 and LS-JSP4 are modified, which are the proposed LS-JSP without scoring function strategy, further optimisation search, BLS strategy, and tabu strategy, respectively. We compare the performance of the LS-JSP and its variants. We choose the instances with two job size, namely n = 500 and n = 3000, from the synthetic and Google benchmarks.
+- `Ablation Analysis.xlsx`:
+  Gives the cost found by variations algorithms on the instances with the job size of 500 and 3000. The improvement of LS-JSP on its variations shows the effectiveness of the corresponding techniques.
+
+
 
 ### 3.3 Parameter Setting
 The Taguchi method of design of experiment (DOE) is conducted to set the parameters of all algorithms. 
+
+- `main effects plot for means`:
+  Shows the parameter influence on the algorithm performance and gives the best value of each parameter.
 
 Based on the experiments, the appropriate parameter combination of the LS-JSP is set as follows: γ = 0.1, α∗d = 0.4, δ = 200 and σ = 500. In GA, the cross probability is set as 0.5, and the mutation probability is 0.15. In PSO, four key parameters, including the weight, two learning factors, and the maximum velocity, are set as 0.6, 0.2, 0.8, and 1, respectively. In EMVO and MVO, the minimal wormhole existence probability is 0.2, the maximum wormhole existence probability is 1, and the exploitation accuracy is 4.
 
