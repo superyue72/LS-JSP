@@ -9,7 +9,7 @@ This repository includes the implementation of LS-JSP and all experimental resul
 
 The completed results are available in [Results](/Results).
 
-The source code of LS-JSP and baseline algorithms are provided in [Source code](/Source_code/LS_Tabu_VMs).
+The source code of LS-JSP and baseline algorithms are provided in [Source code](/Source%20code/LS_Tabu_VMs).
 
 ## 2. Benchmark
 To evaluate the performance of the proposed algorithm, we extract the real-world trace data as one benchmark (Google benchmark) and generate another based on it (synthetic benchmark).
