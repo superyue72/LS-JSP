@@ -21,10 +21,10 @@ We have 210 test instances, including 90 synthetic instances and 120 Google-base
 
 ### 3.1 Comparison Experiments 
 
-- Results on Google Benchmark:
+- `Results on Google Benchmark`:
   
   Give the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on Google Benchmark (120 instances)
-- Results on synthetic Benchmark:
+- `Results on synthetic Benchmark`:
   
   Give the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on synthetic Benchmark (90 instances) 
 
@@ -50,6 +50,6 @@ We implement the proposed LS-JSP and all baselines in C++. All algorithms have t
 
 ### 4.2 Source code
 For all the algorithms, there are three termination conditions: 1) the maximum computation time, 2) the maximum number of iterations, and 3) the maximum
-repeat times of the best solution. In experiments, the maximum number of generations is set as 10000, and the maximum number of repeat times of the best solution is set as 1000. The maximum computation time is related to the number of jobs. The specific experiment settings for all instances is given in <em>ExperimentDesign.xlsx</em>
+repeat times of the best solution. In experiments, the maximum number of generations is set as 10000, and the maximum number of repeat times of the best solution is set as 1000. The maximum computation time is related to the number of jobs. The specific experiment settings for all instances is given in `ExperimentDesign.xlsx`
 
-The termination conditions and all parameters can be changed in <em>base.h</em>
+The termination conditions and all parameters can be changed in `base.h`
