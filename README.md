@@ -19,15 +19,10 @@ We extract the information of jobs scheduled on the cloud from the first-day tra
 ## 3. Results
 We have 210 test instances, including 90 synthetic instances and 120 Google-based instances. Each algorithm is executed 10 times (replicates) for each instance. The average results are computed.
 
-| File | Description |
-|----------- |----------- |
-|Ablation Analysis|The cost found                 |
-|Results on Google Benchmark|The cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on Google Benchmark (120 instances)|
-|Results on synthetic Benchmark|The cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on synthetic Benchmark (90 instances |
-
-
 ### 3.1 Comparison Experiments 
 
+1. Results on Google Benchmark: the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on Google Benchmark (120 instances)
+2. Results on synthetic Benchmark: the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on synthetic Benchmark (90 instances) 
 
 ### 3.2 Ablation Analysis
 
@@ -38,7 +33,7 @@ We have 210 test instances, including 90 synthetic instances and 120 Google-base
 |LS-JSP3 |without BLS|
 |LS-JSP4 |without tabu list|
 
-To evaluate the effectiveness of the core algorithmic techniques underlying LS-JSP, Four variations algorithms named LS-JSP1, LS-JSP2, LS-JSP3 and LS-JSP4 are modified, which are the proposed LS-JSP without scoring function strategy, further optimisation search, BLS strategy, and tabu strategy, respectively. We compare the performance of the LS-JSP and its variants. The complexity of the problem grows with the increase in the number of jobs and machines. Therefore, we choose the instances with the largest size in two regular scales, namely n = 500 and n = 3000, from the randomly generated and google-data-based benchmarks.
+To evaluate the effectiveness of the core algorithmic techniques underlying LS-JSP, Four variations algorithms named LS-JSP1, LS-JSP2, LS-JSP3 and LS-JSP4 are modified, which are the proposed LS-JSP without scoring function strategy, further optimisation search, BLS strategy, and tabu strategy, respectively. We compare the performance of the LS-JSP and its variants. We choose the instances with two job size, namely n = 500 and n = 3000, from the synthetic and Google benchmarks.
 
 ### 3.3 Parameter Setting
 We conduct the Taguchi method of design of experiment (DOE) to study the impacts of the parameters and choose the proper value of each parameter. We set five levels for each parameter, where γ = {0.01, 0.05, 0.1, 0.15, 0.2}, α∗d = {0, 0.1, 0.2, 0.3, 0.4}, σ = {100, 200, 300, 400, 500} and δ = {50, 100, 150, 200, 250}. 25 combinations of parameters are generated according to the Taguchi method and we test them on the same instance.
