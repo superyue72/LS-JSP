@@ -73,6 +73,9 @@ Parameters can be changed in <mark> base.h <mark>
 
 ### 4.2 Source code
 For all the algorithms, there are three termination conditions: 1) the maximum computation time, 2) the maximum number of iterations, and 3) the maximum
-repeat times of the best solution. In experiments, the maximum number of generations is set as 10000, and the maximum number of repeat times of the best solution is set as 1000. The maximum computation time is related to the number of jobs. The specific experiment settings for all instances is given in <em>ExperimentDesign.xlsx</em>
+repeat times of the best solution. In experiments, the maximum number of generations is set as 10000, and the maximum number of repeat times of the best solution is set as 1000. The maximum computation time is related to the number of jobs. The specific experiment settings for all instances are as follows.
+
+<p align="center"><img src="Figures/exp_design.png" width="600"><br>Instances setting and termination conditions</p>
+
 
 The termination conditions can be changed in <em>base.h</em>
