@@ -1,9 +1,13 @@
-# Effective Local Search for Priority-Constrained Job Scheduling in Cloud
+# LS-JSP
+Repository for the paper: Effective Local Search for Priority-Constrained Job Scheduling in Cloud
 
-## 1. Introduction
-We propose a novel local search-based job scheduling method, namely LS-JSP, for the job scheduling problem with recourse and priority constraints. In particular, a scoring function, BMS heuristic, tabu search strategy, and problem-specific heuristic rules are incorporated to improve the algorithm’s effectiveness.
-
-To validate the performance of our LS-JSP algorithm, we compare it with four well-known algorithms, i.e., Genetic Algorithm (GA), Particle Swarm Optimisation Algorithm(PSO), Multi-verse Optimiser Algorithm (MVO) and Enhanced Multi-verse Optimiser Algorithm (EMVO). 
+Abstract: 
+Job scheduling is crucial for optimising resource utilisation and cost in cloud computing, but it poses a significant challenge due to the heterogeneous nature of cloud resources and the increasing number of on-demand requests. 
+We propose a novel local search-based job scheduling method, namely LS-JSP. LS-JSP considers resource
+and priority constraints in cloud computing to jointly determine job assignment and processing sequence. Specifically, LS-JSP
+incorporates a dynamic weighting scheme and a Tabu search strategy to optimise the scheduling solution. We conduct extensive
+experiments on regular-scale and large-scale instances using Google and synthetic benchmarks. Our results demonstrate that LSJSP
+can generate solutions with significantly lower costs than state-of-the-art baselines. 
 
 This repository includes the implementation of LS-JSP and all experimental results (i.e., comparison experiments, ablation study, and parameter setting experiments).
 
@@ -11,29 +15,43 @@ The completed results are available in [Results](/Results).
 
 The source code of LS-JSP and baseline algorithms are provided in [Source code](/Source_code/LS_Tabu_VMs).
 
+
+## 1. Framework
+<p align="center"><img src="Figures/Figure3_alg_framework.png" width="600"><br>An overview of LS-JSP</p>
+
+In this paper, we propose a local-search-based algorithm, named LS-JSP, for solving the JSPRP in cloud computing. First, a set of solutions is generated randomly and then optimised by the proposed smallest left resources (SLR) rule in the initialisation phase. Then LS-JSP steps into the local search phase, taking the best solution $S$ from the solution set as the input. The local search phase works iteratively and contains a greedy and a random search mode to balance diversity and convergence.
 ## 2. Benchmark
 To evaluate the performance of the proposed algorithm, we extract the real-world trace data as one benchmark (Google benchmark) and generate another based on it (synthetic benchmark).
 
 We extract the information of jobs scheduled on the cloud from the first-day trace. The failed jobs and killed jobs are not considered in current research. The preprocessed data is provided in Dataset. Raw and preprocessed data are available at: <https://github.com/google/cluster-data>
 
-## 3. Results
 We have 210 test instances, including 90 synthetic instances and 120 Google-based instances. Each algorithm is executed 10 times (replicates) for each instance. The average results are computed.
+
+## 3. Results
+To validate the performance of our LS-JSP algorithm, we compare it with four well-known algorithms, i.e., Genetic Algorithm (GA), Particle Swarm Optimisation Algorithm(PSO), Multi-verse Optimiser Algorithm (MVO) and Enhanced Multi-verse Optimiser Algorithm (EMVO). 
 
 ### 3.1 Comparison Experiments 
 
-1. Results on Google Benchmark: the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on Google Benchmark (120 instances)
-2. Results on synthetic Benchmark: the cost found by five algorithms (i.e., LS-JSP, GA, PSO, MVO, EMVO) and the improvement LS-JSP algorithm achieves on the baseline algorithms on synthetic Benchmark (90 instances) 
+####  3.1.1 Results on Google Benchmark
+The table shows the cost of the best solution found by all algorithms and the improvement LS-JSP algorithm achieves on the baseline algorithms. There are 120 instances and for the full results, please refer to [Results_google](/Results/Results%20on%20Google%20Benchmark.xlsx).
+
+
+<p align="center"><img src="Figures/res_google.png" width="600"><br>The results of five algorithms on Google benchmark</p>
+
+####  3.1.2 Results on synthetic Benchmark
+The table shows the cost of the best solution found by all algorithms and the improvement LS-JSP algorithm achieves on the baseline algorithms. There are 90 instances and for the full results, please refer to [Results_synthetic](/Results/~$Results%20on%20synthetic%20Benchmark.xlsx).
+
+<p align="center"><img src="Figures/res_synthetic.png" width="600"><br>The results of five algorithms on synthetic benchmark</p>
 
 ### 3.2 Ablation Analysis
 
-| Name | Description |
-|----------- |----------- |
-|LS-JSP1 |without scoring function strategy|
-|LS-JSP2 |without further optimisation search|
-|LS-JSP3 |without BLS|
-|LS-JSP4 |without tabu list|
+To evaluate the effectiveness of the core algorithmic techniques underlying LS-JSP, four variations of algorithms named  LS-JSPw/o sf, LS-JSPw/o opt, LS-JSPw/o BMS and LS-JSPw/o tabu are modified, which are the proposed LS-JSP without scoring function strategy, further optimisation search, BMS strategy, and tabu strategy, respectively. 
 
-To evaluate the effectiveness of the core algorithmic techniques underlying LS-JSP, Four variations algorithms named LS-JSP1, LS-JSP2, LS-JSP3 and LS-JSP4 are modified, which are the proposed LS-JSP without scoring function strategy, further optimisation search, BLS strategy, and tabu strategy, respectively. We compare the performance of the LS-JSP and its variants. We choose the instances with two job size, namely n = 500 and n = 3000, from the synthetic and Google benchmarks.
+The comparison results the ablation study are given as follows.
+
+<p align="center"><img src="Figures/ablation_google.png" width="800"><br>The results of ablation study on Google benchmark</p>
+
+<p align="center"><img src="Figures/ablation_synthetic.png" width="800"><br>The results of ablation study on synthetic benchmark</p>
 
 ### 3.3 Parameter Setting
 We conduct the Taguchi method of design of experiment (DOE) to study the impacts of the parameters and choose the proper value of each parameter. We set five levels for each parameter, where γ = {0.01, 0.05, 0.1, 0.15, 0.2}, α∗d = {0, 0.1, 0.2, 0.3, 0.4}, σ = {100, 200, 300, 400, 500} and δ = {50, 100, 150, 200, 250}. 25 combinations of parameters are generated according to the Taguchi method and we test them on the same instance.
