@@ -35,8 +35,7 @@ To validate the performance of our LS-JSP algorithm, we compare it with four wel
 ####  3.1.1 Results on Google Benchmark
 The table shows the cost of the best solution found by all algorithms and the improvement LS-JSP algorithm achieves on the baseline algorithms. There are 120 instances and for the full results, please refer to [Results_google](/Results/Results%20on%20Google%20Benchmark.xlsx).
 
-
-<p align="center"><img src="Figures/res_google.png" width="600"><br>The results of five algorithms on Google benchmark</p>
+<p align="center"><img src="Figures/res_google.png" width="600" height="290"><br>The results of five algorithms on Google benchmark</p>
 
 ####  3.1.2 Results on synthetic Benchmark
 The table shows the cost of the best solution found by all algorithms and the improvement LS-JSP algorithm achieves on the baseline algorithms. There are 90 instances and for the full results, please refer to [Results_synthetic](/Results/Results%20on%20synthetic%20Benchmark.xlsx).
@@ -54,9 +53,14 @@ The comparison results the ablation study are given as follows.
 <p align="center"><img src="Figures/ablation_synthetic.png" width="800"><br>The results of ablation study on synthetic benchmark</p>
 
 ### 3.3 Parameter Setting
-We conduct the Taguchi method of design of experiment (DOE) to study the impacts of the parameters and choose the proper value of each parameter. We set five levels for each parameter, where γ = {0.01, 0.05, 0.1, 0.15, 0.2}, α∗d = {0, 0.1, 0.2, 0.3, 0.4}, σ = {100, 200, 300, 400, 500} and δ = {50, 100, 150, 200, 250}. 25 combinations of parameters are generated according to the Taguchi method and we test them on the same instance.
+We conduct the Taguchi method of design of experiment (DOE) to study the impacts of the parameters and choose the proper value of each parameter. We set five levels for each parameter, where γ = {0.01, 0.05, 0.1, 0.15, 0.2}, α^∗_d = {0, 0.1, 0.2, 0.3, 0.4}, σ = {100, 200, 300, 400, 500} and δ = {50, 100, 150, 200, 250}. 25 combinations of parameters are generated according to the Taguchi method and we test them on the same instance.
 
-Same experiments are also conducted to baseline algorithms for parameter settings.
+According to the performance, the appropriate parameter combination is set as follows: γ = 0.1, α^∗_d = 0.4, δ = 200 and σ = 500.
+
+<p align="center"><img src="Figures/Figure5_DOE.png" width="600"><br>The results of ablation study on synthetic benchmark</p>
+
+
+Same experiments are also conducted to baseline algorithms for parameter settings. The results of baselines can be found in [Doe Results](/Results/Doe%20for%20Parameter%20Setting)
 
 ## 4. Reproducibility
 ### 4.1 Environment
