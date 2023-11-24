@@ -39,7 +39,7 @@ The table shows the cost of the best solution found by all algorithms and the im
 <p align="center"><img src="Figures/res_google.png" width="600"><br>The results of five algorithms on Google benchmark</p>
 
 ####  3.1.2 Results on synthetic Benchmark
-The table shows the cost of the best solution found by all algorithms and the improvement LS-JSP algorithm achieves on the baseline algorithms. There are 90 instances and for the full results, please refer to [Results_synthetic](/Results/~$Results%20on%20synthetic%20Benchmark.xlsx).
+The table shows the cost of the best solution found by all algorithms and the improvement LS-JSP algorithm achieves on the baseline algorithms. There are 90 instances and for the full results, please refer to [Results_synthetic](/Results/Results%20on%20synthetic%20Benchmark.xlsx).
 
 <p align="center"><img src="Figures/res_synthetic.png" width="600"><br>The results of five algorithms on synthetic benchmark</p>
 
